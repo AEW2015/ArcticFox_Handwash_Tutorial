@@ -46,9 +46,9 @@ public class HoldWhenAccept : VerilogAutomation
 always@(posedge {Module.PrimaryClock})  begin
     {Reset.IfReset(Module, $"{reg.Name} <= 0;")
 	}if(accept{incomingSignal.UpperFirstLetter()})
-		{reg.Name} <= {/*???*/};
+		{reg.Name} <= {incomingSignal};
     else
-		{reg.Name} <= {/*???*/};
+		{reg.Name} <= {reg.Name};
 end
 		";
 

@@ -1,0 +1,52 @@
+    1  exec bash
+    2  sudo mkdir /icii/
+    3  sudo mkdir /icii/arcticfox/
+    4  echo "0" | sudo tee /icii/arcticfox/installing
+    5  sudo mkdir /icii/downloads/
+    6  sudo mv /workspaces/ArcticFox.zip /icii/downloads/
+    7  cd /icii/downloads/
+    8  sudo unzip ArcticFox.zip
+    9  cd ArcticFox*/
+   10  sudo chmod +x ArcticFoxInstaller.sh
+   11  source ArcticFoxInstaller.sh
+   12  echo "1" | sudo tee /icii/arcticfox/installing
+   13  arcticfox -run
+   14  arcticfox -clean
+   15  arcticfox -run
+   16  app install verilator
+   17  app-get install verilator
+   18  apt install verilator
+   19  sudo apt install verilator
+   20  sudo apt install verilator 
+   21  cd ~
+   22  wget https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2022-09-08/oss-cad-suite-linux-x64-20220908.tgz
+   23  tar -xvf ./oss-cad-suite-linux-x64-20220908.tgz 
+   24  ./oss-cad-suite/bin/verilator
+   25  ./oss-cad-suite/bin/iverilog
+   26  ./oss-cad-suite/bin/ghdl
+   27  cd /workspaces/ArcticFox_Handwash_Tutorial/Code/verilator_test/
+   28  ~/oss-cad-suite/bin/verilator --cc --exe --build -j 0 -Wall sim_main.cpp our.v
+   29  ~/oss-cad-suite/bin/verilator --cc --exe --build -j 1 -Wall sim_main.cpp our.v
+   30  ls
+   31  ./obj_dir/Vour
+   32  cd ..
+   33  cd verilator_test/
+   34  ls
+   35  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wall our.v
+   36  ls
+   37  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wall ../../Verilog/HandwashSensor.v 
+   38  ~/oss-cad-suite/bin/verilator --cc --build -j 1  ../../Verilog/HandwashSensor.v 
+   39  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wno-fatal  ../../Verilog/HandwashSensor.v 
+   40  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wno-fatal  ../../Verilog/HandwashSensor.v ../../Verilog/Test/HandwashSensorTest.v 
+   41  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wno-fatal  ../../Verilog/HandwashSensor.v 
+   42  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wno-fatal  ../../Verilog/HandwashSensor.v ../../Verilog/Test/HandwashSensorTest.v 
+   43  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wno-fatal --exe ./sim_main.cpp  ../../Verilog/HandwashSensor.v ../../Verilog/Test/HandwashSensorTest.v 
+   44  ./obj_dir/VHandwashSensor 
+   45  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wno-fatal --exe ./sim_main.cpp  ../../Verilog/HandwashSensor.v ../../Verilog/Test/HandwashSensorTest.v 
+   46  ./obj_dir/VHandwashSensor 
+   47  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wno-fatal --exe ./sim_main.cpp  ../../Verilog/HandwashSensor.v ../../Verilog/Test/HandwashSensorTest.v 
+   48  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wno-fatal --trace --exe ./sim_main.cpp  ../../Verilog/HandwashSensor.v ../../Verilog/Test/HandwashSensorTest.v 
+   49  ./obj_dir/VHandwashSensor 
+   50  ~/oss-cad-suite/bin/verilator --cc --build -j 1 -Wno-fatal --trace --exe ./sim_main.cpp  ../../Verilog/HandwashSensor.v ../../Verilog/Test/HandwashSensorTest.v 
+   51  ./obj_dir/VHandwashSensor 
+   52  history > hist.log

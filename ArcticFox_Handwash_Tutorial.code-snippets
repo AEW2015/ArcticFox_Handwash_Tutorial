@@ -1,0 +1,13 @@
+{
+"HoldWhenAccept": {
+    "scope": "verilog",
+    "prefix": ["[HoldWhenAccept]"],
+    "body": [
+        "[HoldWhenAccept"
+    ],
+    "description": [
+        ""
+    ]
+},
+
+}
